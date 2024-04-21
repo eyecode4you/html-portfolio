@@ -1,0 +1,24 @@
+.color-title#red {
+    color: crimson;
+}
+.color-title#blue {
+    color: blue;
+}
+.color-title#orange {
+    color: peru;
+}
+.color-title#green {
+    color: palegreen;
+}
+.color-title#yellow {
+    color: gold;
+}
+
+h2[class="color-title"] {
+    font-weight: normal;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
