@@ -1,0 +1,94 @@
+.border {
+    border: 1px solid black;
+}
+
+/* Flag of Laos */
+div.Laos-flag {
+    background-color: red;
+    height: 150px;
+    width: 225px;
+    position: relative;
+  }
+
+  /* Blue Square */
+  div.Laos-flag > div {
+    background-color: darkblue;
+    top: 35px;
+    height: 75px;
+    width: 100%;
+    position: absolute;
+  }
+  /* Circle */
+  div.Laos-flag div div {
+    background-color: aliceblue;
+    position: relative;
+    margin-top: 7.5px;  
+    margin-left: 82.5px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+  }
+
+/*Flag of Ireland*/
+div.Ireland-flag {
+    background-color: green;
+    height: 150px;
+    width: 225px;
+    position: relative;
+    margin-top: 10px;
+  }
+  div.Ireland-flag > div {
+    background-color: white;
+    height: 100%;
+    width: 75px;
+    left: 33.33%;
+    position: absolute;
+  }
+  div.Ireland-flag > div > div{
+    background-color: orange;
+    height: 100%;
+    position: relative;
+    width: 75px;
+    left: 100%;
+  }
+
+/*Flag of JAPAN*/
+div.Japan-flag {
+    background-color: white;
+    height: 150px;
+    width: 225px;
+    margin-top: 10px;
+  }
+  div.Japan-flag > div {
+    background-color: red;
+    border-radius: 50%;
+    top: 25%;
+    height: 75px;
+    width: 75px;
+    left: 33.33%;
+    position: relative;
+  }
+
+/*Flag of Switzerland*/
+div.Swiss-flag {
+    background-color: red;
+    height: 150px;
+    width: 225px;
+    margin-top: 10px;
+    position: relative;
+}
+div.Swiss-flag > div {
+    background-color: white;
+    margin: 20% 0% 0% 42.5%;
+    height: 40%;
+    width: 25px;
+    position: relative;
+}
+div.Swiss-flag > div > div {
+    background-color: white;
+    position: relative;
+    top: 30%;
+    margin-left: -75%;
+    height: 40%;
+    width: 62px;
+}
