@@ -92,3 +92,27 @@ div.Swiss-flag > div > div {
     height: 40%;
     width: 62px;
 }
+
+/*Flag of Sweden*/
+div.Sweden-flag {
+  background-color: rgb(4, 4, 138);
+  height: 150px;
+  width: 225px;
+  margin-top: 10px;
+  position: relative;
+}
+div.Sweden-flag > div {
+  background-color: gold;
+  margin: 0% 0% 0% 30%;
+  height: 100%;
+  width: 25px;
+  position: relative;
+}
+div.Sweden-flag > div > div {
+  background-color: gold;
+  position: relative;
+  top: 43%;
+  margin-left: -270%;
+  height: 15%;
+  width: 900%;
+}
