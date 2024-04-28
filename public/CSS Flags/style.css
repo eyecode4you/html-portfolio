@@ -138,3 +138,33 @@ div.Hungary-flag > div > div {
   width: 100%;
   position: absolute;
 }
+
+/*Flag of UAE*/
+div.UAE-flag {
+  background-color: rgb(245, 30, 30);
+  height: 150px;
+  width: 225px;
+  margin-top: 10px;
+}
+div.UAE-flag > div {
+  background-color: green;
+  margin-top: 0px;
+  margin-left: 50px;
+  height: 50px;
+  width: 175px;
+  position: relative;
+}
+div.UAE-flag > div > div {
+  background-color: white;
+  margin-top: 50px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+}
+div.UAE-flag > div > div > div{
+  background-color: black;
+  margin-top: 50px;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+}
