@@ -190,3 +190,43 @@ div.Thailand-flag > div > div {
   width: 100%;
   position: absolute;
 }
+
+/*Flag of Iceland*/
+div.Iceland-flag {
+  background-color: rgb(4, 4, 138);
+  height: 150px;
+  width: 225px;
+  margin-top: 10px;
+  position: static;
+}
+div.Iceland-flag > div {
+  background-color: white;
+  margin: 0% 0% 0% 30%;
+  height: 100%;
+  width: 25px;
+  position: relative;
+}
+div.Iceland-flag > div > div {
+  background-color: white;
+  top: 42.5%;
+  left: -270%;
+  height: 25px;
+  width: 225px;
+  position: absolute;
+}
+div.Iceland-flag > div > div > div {
+  background-color: red;
+  top: 7px;
+  left: 0%;
+  height: 12.5px;
+  width: 100%;
+  position:relative;
+}
+div.Iceland-flag > div > div > div > div {
+  background-color: red;
+  top: -71px;
+  left: 33%;
+  height: 150px;
+  width: 12.5px;
+  position:relative;
+}
