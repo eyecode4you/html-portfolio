@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    html {
+    background-color: rgb(162, 245, 248);
+}
+#dvd {
+    position: relative;
+    background-color: brown;
+}
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+#animate img {
+    width: 138px;
+    height: 66px;
+    position: absolute;
+}
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="eyecode4you;)">
+    <link rel="stylesheet" href="style.css">
     <title>Will it Ever Hit a Corner?</title>
 </head>
 
 <body>
-    <div id = "dvd">
+    <div id = dvd>
         <div id="animate"><img src="dvdlogo.png"></div>
     </div>
+
+    <script>
+      const e = document.getElementById("animate");
+      var posx = Math.random() * 401;
+      var posy = Math.random() * 401;
+
+      var sx = 2; // x & y velocity
+      var sy = 2;
+
+      function dvdmove() {
+        posx += sx;
+        posy += sy;
+        e.style.top = posy + 'px';
+        e.style.left = posx + 'px';
+        
+        if (posy <= 0){ // boundary checks for y - top & left
+            posy = 0;
+            sy *= -1;
+        }
+        if (posy >= window.innerHeight - 66){
+            posy = window.innerHeight - 66;
+            sy *= -1;
+        }
+
+        if (posx <= 0){ // boundary checks for x - top & left
+            posx = 0;
+            sx *= -1;
+        }
+        if (posx >= window.innerWidth - 138){
+            posx = window.innerWidth - 138;
+            sx *= -1;
+        }
+        requestAnimationFrame(dvdmove);
+      }
+      window.onload(dvdmove())
+    </script>
 </body>
 
 <footer>
