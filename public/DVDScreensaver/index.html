@@ -35,6 +35,8 @@
     </div>
 
     <script>
+      var audio = new Audio('moneymoneymoney.mp3');
+      audio.play();
       const e = document.getElementById("animate");
       var posx = Math.random() * 401;
       var posy = Math.random() * 401;
@@ -74,5 +76,6 @@
 <footer>
     <hr/>
     <a href="https://eyecode4you.github.io/html-portfolio/">Home</a>
+    <button onclick="audio.pause()">Stop Audio</button>
 </footer>
 </html>
