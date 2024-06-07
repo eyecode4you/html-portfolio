@@ -38,8 +38,8 @@
       function dvdmove() {
         posVel[0] += posVel[2];
         posVel[1] += posVel[3];
-        e.style.top = posy + 'px';
-        e.style.left = posx + 'px';
+        e.style.top = posVel[1] + 'px';
+        e.style.left = posVel[0] + 'px';
         if (posVel[1] <= 0){ // boundary checks for y - top & left
             posVel[1] = 0;
             posVel[3] *= -1;
