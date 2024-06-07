@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <style>
     html {
     background-color: rgb(162, 245, 248);
@@ -20,7 +19,6 @@
     position: absolute;
 }
 </style>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,51 +26,41 @@
     <link rel="stylesheet" href="style.css">
     <title>Will it Ever Hit a Corner?</title>
 </head>
-
 <body>
     <div id = dvd>
         <div id="animate"><img src="dvdlogo.png"></div>
     </div>
-
     <script>
       var audio = new Audio('moneymoneymoney.mp3');
       audio.play();
       const e = document.getElementById("animate");
-      var posx = Math.random() * 401;
-      var posy = Math.random() * 401;
-
-      var sx = 2; // x & y velocity
-      var sy = 2;
-
+      posVel = [Math.random() * 401, Math.random() * 401, 2, 2] //xy pos & vel
       function dvdmove() {
-        posx += sx;
-        posy += sy;
+        posVel[0] += posVel[2];
+        posVel[1] += posVel[3];
         e.style.top = posy + 'px';
         e.style.left = posx + 'px';
-        
-        if (posy <= 0){ // boundary checks for y - top & left
-            posy = 0;
-            sy *= -1;
+        if (posVel[1] <= 0){ // boundary checks for y - top & left
+            posVel[1] = 0;
+            posVel[3] *= -1;
         }
-        if (posy >= window.innerHeight - 66){
-            posy = window.innerHeight - 66;
-            sy *= -1;
+        if (posVel[1] >= window.innerHeight - 66){
+            posVel[1] = window.innerHeight - 66;
+            posVel[3] *= -1;
         }
-
-        if (posx <= 0){ // boundary checks for x - top & left
-            posx = 0;
-            sx *= -1;
+        if (posVel[0] <= 0){ // boundary checks for x - top & left
+            posVel[0] = 0;
+            posVel[2] *= -1;
         }
-        if (posx >= window.innerWidth - 138){
-            posx = window.innerWidth - 138;
-            sx *= -1;
+        if (posVel[0] >= window.innerWidth - 138){
+            posVel[0] = window.innerWidth - 138;
+            posVel[2] *= -1;
         }
         requestAnimationFrame(dvdmove);
       }
       window.onload(dvdmove())
     </script>
 </body>
-
 <footer>
     <hr/>
     <a href="https://eyecode4you.github.io/html-portfolio/">Home</a>
