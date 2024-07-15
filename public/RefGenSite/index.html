@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harvard Reference Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./ref_gen.js"></script>
+</head>
+
+<body>
+    <h1 id="head1">Harvard Reference Generator</h1>
+    
+    <div>
+    <form id="info">
+        Title: <input type="text" name="title"><br>
+        Author First Name: <input type="text" name="fname"><br>
+        Author Last Name: <input type="text" name="lname"><br>
+        Website: <input type="text" name="site"><br>
+        Publisher: <input type="text" name="pub"><br>
+        URL: <input type="text" name="url"><br>
+        Year of Publication: <input type="text" name="pyear"><br>
+        <input type="reset" value="Clear">
+    </form>
+    </div>
+
+    <p id="ref"></p>
+
+    <br>
+    <button type="button" onclick="refGen()">Generate Reference</button>
+    <button type="button" onclick="clearR()">Clear References</button>
+</body>
+<hr>
+<footer><a href="/html-portfolio/index.html">Home</a></footer></html>
