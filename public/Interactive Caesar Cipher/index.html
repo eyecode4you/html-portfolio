@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Caesar Cipher</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./caesar_cipher.js" defer></script>
+</head>
+<body>
+    <h1>EyeCode's Interactive Caesar Cipher</h1>
+    <div>
+        <label for="shiftValue">Shift Value:</label>
+        <input type="number" min="0" max="27" id="shiftValue" placeholder="Enter shift value">
+        <button id="setShift">Set Shift</button>
+    </div>
+    <div>
+        <button id="viewKey">View Key</button>
+    </div>
+    <div>
+        <label for="message">Message:</label>
+        <input type="text" id="message" placeholder="Enter your message">
+        <button id="encryptMessage">Encrypt</button>
+        <button id="decryptMessage">Decrypt</button>
+    </div>
+    <div>
+        <h3>Output:</h3>
+        <pre id="output"></pre>
+    </div>
+</body>
+<footer><a href="/html-portfolio/index.html">Home</a></footer></html>
